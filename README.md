@@ -4,6 +4,10 @@
 
 The Holborn Website Project is a University of the Arts London Computer Science BSc Year 1 module final project. The brief was to produce a speculative site to be displayed in 10 years' time (2035). The website serves as an interactive and informative platform designed to provide insights into Holborn's history, attractions, and community initiatives. The goal is to create a visually appealing, fully responsive, user-friendly experience while maintaining readability and usability.
 
+# Preview
+![image](https://github.com/user-attachments/assets/46a31d53-94ea-4fa9-9ac8-e55f8e46465a)
+
+
 # Features
 
 - Local Information: Showcases key attractions, businesses, and cultural highlights of Holborn.
