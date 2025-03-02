@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+  <link rel="stylesheet" href="../src/styles.css">
+  <title>Holborn</title>
+
+  <!-- Import Outfit Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Import Icons -->
+  <script src="https://kit.fontawesome.com/e597f29157.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Lenis Smooth Scrolling -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+  <script>
+    // Initialize Lenis
+    const lenis = new Lenis();
+
+    // Use requestAnimationFrame to continuously update the scroll
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  </script>
+
+  <!-- Import Swiper Library for Image Carousel-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+
+<body>
+
+  <!-- Cookie Consent Popup -->
+  <div class="cookie-popup" id="cookiePopup">
+    <div class="cookie-content">
+      <h3>Cookie Notice</h3>
+      <p>
+        We use cookies and other tracking technologies on our website, some of which are placed by third parties.
+        We do this to ensure the functionalities on the site, measure and analyze user traffic, create general
+        statistics regarding the use of the page,
+        as well as for targeted marketing, such as retargeting.
+      </p>
+      <p>
+        By clicking on "Accept", you agree that we and third parties may place cookies for these purposes and that we
+        and third parties may use your collected
+        personal information (e.g. IP address, device ID, and browsing behavior) in the context of targeted marketing.
+        Our processing of collected personal data for
+        the other purposes is based on our legitimate interest, cf. GDPR article 6, 1 (f).
+      </p>
+      <p>
+        Under "Cookie settings" you can choose which specific cookies you consent to. If you disable all cookies, you
+        will only use the strictly necessary cookies.
+      </p>
+      <p>
+        At all times, you can change or withdraw your consent to the placement of cookies and the processing of personal
+        data. For further information, please read our
+        <a href="#">Cookie Policy</a> and <a href="#">Privacy Policy</a>.
+      </p>
+      <p>
+        Google’s <a href="https://policies.google.com/privacy">Privacy & Terms site</a>
+      </p>
+      <div class="cookie-buttons">
+        <button id="acceptBtn">Accept</button>
+        <button id="declineBtn">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="brand">holborn</a>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="nav-content" id="navContent">
+        <ul class="nav-menu">
+          <li><a href="../homepage" class="active">Home</a></li>
+          <li><a href="../events">Events</a></li>
+          <li><a href="../places">Places</a></li>
+        </ul>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-meta"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></i></a>
+        </div> <!-- Social Icons End -->
+
+      </div> <!-- Nav Content End -->
+    </div> <!-- Container End -->
+  </nav> <!-- Nav End -->
+
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>
+        <span>Discover</span>
+      </h1>
+      <h2><span>The corporate heart of London</span></h2>
+      <h3><span>Where centuries of heritage blend seamlessly</span><br> <span>with contemporary culture</span></h3>
+    </div>
+  </div>
+
+  <!-- Featured Stories Carousel -->
+  <section class="featured">
+    <div class="featured-text">
+      <h2>Upcoming in <span style="color:#5CA5C7">Holborn</span></h2>
+      <h3>Fresh News, Trends and Developments</h3>
+    </div>
+
+    <!-- Slider main container -->
+    <swiper-container class="mySwiper" navigation="true">
+
+      <!-- Swiper Navigation Arrow Buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <div class="swiper-wrapper">
+
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <a href="../events/designfestival.html" target="_self">
+            <div class="slide-text"> <!-- Text Area Box-->
+              <p class="slide-title">London Design Festival 2035</p>
+              <p class="slide-description">This year's festival celebrates London's position as the global design
+                capital, featuring an extraordinary lineup of events, exhibitions, and installations across the city.
+              </p>
+            </div>
+            <img src="../public/assets/featured2.png">
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="../events/smartcafes.html" target="_blank">
+            <div class="slide-text"> <!-- Text Area Box-->
+              <p class="slide-title">The Rise of Smart Cafés</p>
+              <p class="slide-description">"Smart cafés are transforming the coffee shop experience with app-based ordering, AI-powered service, and tech-friendly features like wireless charging and interactive screens. These modern spaces cater to remote workers, tech enthusiasts, and casual visitors, redefining convenience and connectivity in the hospitality industry.</p>
+            </div>
+            <img src="../public/assets/smartcafes.jpg">
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="../events/cleanup.html" target="_blank">
+            <div class="slide-text"> <!-- Text Area Box-->
+              <p class="slide-title">The Volunteer-Led Initiative Cleaning Up Holborn’s Streets</p>
+              <p class="slide-description">Community volunteers in Holborn work together to clear litter from streets and parks, transforming the area and inspiring environmental action across the city.</p>
+            </div>
+            <img src="../public/assets/cleanup.png">
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="../events/techfair.html" target="_blank">
+            <div class="slide-text"> <!-- Text Area Box-->
+              <p class="slide-title">Holborn Tech Fair</p>
+              <p class="slide-description">Tech enthusiasts gather at the Holborn Tech Fair to explore the latest innovations in AI, virtual reality, and sustainable technology, shaping the future of urban living.</p>
+            </div>
+            <img src="../public/assets/techfair.jpg">
+          </a>
+        </div>
+    </swiper-container>
+    </div>
+  </section>
+
+  <section class="overview">
+    <div class="container">
+      <div class="icon-text-item">
+        <i class="fa-solid fa-location-dot overview-icon"></i>
+        <p class="text">Get inspired by activities and insights straight from those who know Holborn best.</p>
+      </div>
+      <div class="icon-text-item">
+        <i class="fa-solid fa-book overview-icon"></i>
+        <p class="text">Helping you stay connected to the stories, trends, and highlights that make Holborn special.
+        </p>
+      </div>
+      <div class="icon-text-item">
+        <i class="fa-solid fa-suitcase overview-icon"></i>
+        <p class="text">All you need to navigate and uncover the hidden gems of Holborn.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>about</h4>
+          <ul>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">cookies</a></li>
+            <li><a href="#">accessibility statement</a></li>
+            <li><a href="#">terms of use</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>events</h4>
+          <ul>
+            <li><a href="#">culture</a></li>
+            <li><a href="#">tech</a></li>
+            <li><a href="#">events</a></li>
+            <li><a href="#">spotlight</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>stories</h4>
+          <ul>
+            <li><a href="#">history</a></li>
+            <li><a href="#">community</a></li>
+            <li><a href="#">business</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-meta"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main Page Functionality -->
+  <script src="../src/main.js"></script>
+
+  <!-- Popup Cookies -->
+  <script src="../src/cookie.js"></script>
+
+  <!-- Mobile Menu -->
+  <script src="../src/hamburger.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- AI Chatbot -->
+  <script
+    src="https://cdn.jsdelivr.net/gh/edenai/yodabot@e4f753f/embed.js?project=6edfc973-7cf2-46ee-9a88-311df42467c7&provider=openai&model=gpt-4o-mini"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 50,
+      navigation: true,
+      loop: true,
+      grabCursor: true,
+      lazyLoading: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1600: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>

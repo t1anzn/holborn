@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+  <link rel="stylesheet" href="../src/styles.css">
+  <title>Holborn</title>
+
+  <!-- Import Outfit Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Import Icons -->
+  <script src="https://kit.fontawesome.com/e597f29157.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Lenis Smooth Scrolling -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+  <script>
+    // Initialize Lenis
+    const lenis = new Lenis();
+
+    // Use requestAnimationFrame to continuously update the scroll
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  </script>
+
+  <!-- Import Swiper Library for Image Carousel-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="brand">holborn</a>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="nav-content" id="navContent">
+        <ul class="nav-menu">
+          <li><a href="../homepage">Home</a></li>
+          <li><a href="../events">Events</a></li>
+          <li><a href="../places" class="active">Places</a></li>
+        </ul>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-meta"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></i></a>
+        </div> <!-- Social Icon End-->
+
+      </div> <!-- Nav Content End-->
+    </div> <!-- Container End -->
+  </nav> <!-- Nav End -->
+
+
+  <!-- Hero Section -->
+  <div class="places-hero">
+    <div class="hero-text">
+      <h1>
+        <span>Places to Visit in Holborn</span>
+      </h1>
+    </div>
+  </div>
+
+
+  <section class="places">
+
+    <h1>Things to Do</h1>
+    <p>
+      Discover the best of Holborn with our curated guide to must-visit spots, hidden gems and unforgettable experiences
+      waiting to be explored.
+    </p>
+
+    <!-- Tab Buttons/Filters-->
+    <div class="tabs">
+      <button class="tab-button active" data-tab="tab1">Restaurants</button>
+      <button class="tab-button" data-tab="tab2">Shopping</button>
+      <button class="tab-button" data-tab="tab3">Entertainment</button>
+      <button class="tab-button" data-tab="tab4">Cafés</button>
+    </div>
+
+    <!-- First Button Content -->
+    <div id="tab1" class="tab-content active">
+      <div class="grid">
+        <div class="card stacked">
+          <a href="https://www.google.com/maps/search/?api=1&query=Swiss+Butter+Holborn"><img
+              src="../public/assets/swissbutter2.jpg" alt="" class="card__img" loading="lazy">
+            <h3>Swiss Butter</h3>
+          </a>
+          <p>Swiss Butter serves delicious steaks, chicken, and salmon with their signature butter sauces, offering a
+            cozy and flavorful dining experience.</p>
+        </div>
+
+        <div class="card stacked">
+          <a href="https://www.google.com/maps/search/?api=1&query=Abeno+Holborn"><img src="../public/assets/abeno.jpg"
+              alt="" class="card__img" loading="lazy">
+            <h3>Abeno</h3>
+          </a>
+          <p>Simple Japanese restaurant specialising in savoury pancakes, where tables have embedded hotplates.</p>
+        </div>
+
+        <div class="card stacked">
+          <a href="https://www.google.com/maps/search/?api=1&query=The+Bountiful+Cow+Holborn"><img
+              src="../public/assets/bountiful cow.png" alt="" class="card__img" loading="lazy">
+            <h3>The Bountiful Cow</h3>
+          </a>
+          <p>Holborn's hidden gem, The Bountiful Cow is an independent, family-run bar with a delicious steak oriented
+            lunch & dinner menu.</p>
+        </div>
+
+        <div class="card stacked">
+          <a href="https://www.google.com/maps/search/?api=1&query=Holborn+Dining+Room"><img
+              src="../public/assets/holborndiningroom.jpg" alt="" class="card__img" loading="lazy">
+            <h3>Holborn Dining Room</h3>
+          </a>
+          <p>A grand brasserie, in central London, Holborn Dining Room serves seasonal, locally sourced modern British
+            cuisine with a twist.</p>
+        </div>
+
+      </div><!-- Grid End -->
+    </div> <!-- First Button End -->
+
+    <!-- Second Button Content -->
+    <div id="tab2" class="tab-content">
+      <div class="grid">
+
+        <div class="card stacked">
+          <a href="https://www.google.com/maps/search/?api=1&query=Leather+Lane+Market+Holborn"><img
+              src="../public/assets/leatherlanemarket.jpg" alt="" class="card__img" loading="lazy">
+            <h3>Leather Lane Market</h3>
+          </a>
+          <p>Lively weekday street market with stands selling fresh produce, clothing, street food & sundries.</p>
+        </div>
+
+        <div class="card stacked">
+          <a href="https://www.google.com/maps/search/?api=1&query=Farringdons+Holborn"><img
+              src="../public/assets/farringdons.jpg" alt="" class="card__img" loading="lazy">
+            <h3>Farringdons Jewellery</h3>
+          </a>
+          <p>Farringdons' growing and ever-changing antique and vintage collection includes exceptional pieces from the
+            Georgian, Victorian, Edwardian and Art Deco eras.</p>
+        </div>
+
+        <div class="card stacked">
+          <a href="https://www.google.com/maps/search/?api=1&query=James+Smith+and+Sons+Holborn"><img
+              src="../public/assets/jamessmithandsons.jpg" alt="" class="card__img" loading="lazy">
+            <h3>James Smith and Sons</h3>
+          </a>
+          <p>Umbrellas, parasols and walking sticks in handsome, original Victorian shop.</p>
+        </div>
+
+      </div><!-- Grid End -->
+    </div> <!-- Second Button End -->
+
+    <!-- Third Button Content -->
+    <div id="tab3" class="tab-content">
+      <div class="grid">
+
+        <div class="card stacked">
+          <a href="https://www.google.com/maps/search/?api=1&query=Hunterian+Museum+Holborn"><img
+              src="../public/assets/hunterian.jpg" alt="" class="card__img" loading="lazy">
+            <h3>Hunterian Museum</h3>
+          </a>
+          <p>Grisly history of surgery and medicine with gruesome instruments and preserved specimens.</p>
+        </div>
+
+        <div class="card stacked">
+          <a href="https://www.google.com/maps/search/?api=1&query=Lucky+Voice+Holborn"><img
+              src="../public/assets/luckyvoice.jpg" alt="" class="card__img" loading="lazy">
+            <h3>Lucky Voice</h3>
+          </a>
+          <p>Visitors sing karaoke & drink cocktails at this slick operation with private rooms.</p>
+        </div>
+
+        <div class="card stacked">
+          <a href="https://www.google.com/maps/search/?api=1&query=Pizza+Express+Live+Holborn"><img
+              src="../public/assets/pizzaexpresslive.png" alt="" class="card__img" loading="lazy">
+            <h3>Pizza Express Live</h3>
+          </a>
+          <p>Pizza Express Live in Holborn combines great food with live music, offering an intimate venue for jazz,
+            comedy, and more.</p>
+        </div>
+
+      </div><!-- Grid End -->
+    </div> <!-- Third Button End -->
+
+    <!-- Fourth Content -->
+    <div id="tab4" class="tab-content">
+      <div class="grid">
+
+        <div class="card stacked">
+          <a href="https://www.google.com/maps/search/?api=1&query=Roasting+Plant+Coffee+Holborn"><img
+              src="../public/assets/roastingplantcoffee.png" alt="" class="card__img" loading="lazy">
+            <h3>Roasting Plant Coffee</h3>
+          </a>
+          <p>Roasting Plant Coffee offers a unique coffee experience with freshly roasted beans on-site, brewed to
+            perfection for every cup.</p>
+        </div>
+
+        <div class="card stacked">
+          <a href="https://www.google.com/maps/search/?api=1&query=Kozzy+Cafe+Holborn"><img
+              src="../public/assets/fastbreak.png" alt="" class="card__img" loading="lazy">
+            <h3>Kozzy Café</h3>
+          </a>
+          <p> A cozy spot offering hearty breakfast options, delicious sandwiches, and refreshing beverages in a
+            friendly atmosphere.</p>
+        </div>
+
+        <div class="card stacked">
+          <a href="https://www.google.com/maps/search/?api=1&query=Blank+Street+Coffee+Holborn"><img
+              src="../public/assets/blankstreetcoffee.png" alt="" class="card__img" loading="lazy">
+            <h3>Blank Street Coffee</h3>
+          </a>
+          <p>A vibrant cafe known for its expertly crafted coffee and inviting atmosphere, perfect for a quick caffeine
+            fix or a relaxed hangout.</p>
+        </div>
+
+      </div><!-- Grid End -->
+    </div> <!-- Fourth Button End -->
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>about</h4>
+          <ul>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">cookies</a></li>
+            <li><a href="#">accessibility statement</a></li>
+            <li><a href="#">terms of use</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>events</h4>
+          <ul>
+            <li><a href="#">culture</a></li>
+            <li><a href="#">tech</a></li>
+            <li><a href="#">events</a></li>
+            <li><a href="#">spotlight</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>stories</h4>
+          <ul>
+            <li><a href="#">history</a></li>
+            <li><a href="#">community</a></li>
+            <li><a href="#">business</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-meta"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main Page Functionality -->
+  <script src="../src/main.js"></script>
+
+  <!-- Mobile Menu -->
+  <script src="../src/hamburger.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- AI Chatbot -->
+  <script
+    src="https://cdn.jsdelivr.net/gh/edenai/yodabot@e4f753f/embed.js?project=6edfc973-7cf2-46ee-9a88-311df42467c7&provider=openai&model=gpt-4o-mini"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 50,
+      navigation: true,
+      loop: true,
+      grabCursor: true,
+      lazyLoading: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1600: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+  <link rel="stylesheet" href="../src/styles.css">
+  <title>Holborn</title>
+
+  <!-- Import Outfit Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Import Icons -->
+  <script src="https://kit.fontawesome.com/e597f29157.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Lenis Smooth Scrolling -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+  <script>
+    // Initialize Lenis
+    const lenis = new Lenis();
+
+    // Use requestAnimationFrame to continuously update the scroll
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  </script>
+
+  <!-- Import Swiper Library for Image Carousel-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../events/index.html" class="brand">back</a>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="nav-content" id="navContent">
+        <ul class="nav-menu">
+          <li><a href="../homepage" class="active">Home</a></li>
+          <li><a href="../events">Events</a></li>
+          <li><a href="../places">Places</a></li>
+        </ul>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-meta"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></i></a>
+        </div> <!-- Social Icons End -->
+
+      </div> <!-- Nav Content End -->
+    </div> <!-- Container End -->
+  </nav> <!-- Nav End -->
+
+  <section class="xsmall-nav-bg">
+  </section>
+
+  <div class="bg-container">
+    <section class="article-container">
+
+      <header class="article-header">
+        <h1>Holborn Library Reopens Following £12 Million Renovation</h1>
+        <a href='#'>
+          <h2>32-38 Theobalds Road</h2>
+        </a>
+      </header>
+
+      <figure>
+        <img src="../public/assets/modernlibrary.jpg">
+        <figcaption>The newly renovated Holborn Library, a blend of historic architecture and modern design.</figcaption>
+      </figure>
+
+      <article class="article-content">
+        <h1 style="text-transform: capitalize;">Holborn Library reopens its doors after an extensive £12 million renovation, blending historical charm with modern amenities. The grand reopening will take place in January 2025.</h1>
+        <p>
+          The £12 million renovation of Holborn Library has brought a modern twist to the beloved historic landmark, offering a fresh take on a space that’s long been a cornerstone of the local community. The revamped library combines the building’s Edwardian architecture with cutting-edge features to create a hub that caters to a new generation of visitors, while preserving its traditional purpose as a public resource.
+        </p>
+      
+        <h2>Preserving the Past, Embracing the Future</h2>
+        <p>
+          While the modernization is celebrated by many, some long-time residents have raised concerns about the shift in focus. Traditionally, the library has been a sanctuary for quiet reading, research, and community events. With the addition of coworking spaces and digital resources, some worry that the heart of the library’s mission could be lost. There is a sense that the space has been redefined, potentially leaving behind those who have relied on the library for its traditional offerings.
+        </p>
+        <p>
+          Despite this, supporters argue that the library is simply adapting to the times, offering something for everyone. High-speed Wi-Fi, access to 3D printing, and video-editing facilities cater to those looking to engage with new technology, while cultural programs like author talks and art exhibitions ensure there is still a strong connection to the library’s educational roots.
+        </p>
+
+        <aside class="google-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.569004940488!2d-0.11809122289306986!3d51.521122671816464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b49914a792b%3A0xebe1beb5466b59ab!2sHolborn%20Library!5e0!3m2!1sen!2suk!4v1737748979446!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <div class="time-schedule">
+            <div class="opening-times">
+              <h3>Opening Times</h3>
+
+              <div class="times">
+                <div class="day-time">
+                  <span class="day">Mon</span>
+                  <span class="time">10:00—19:00</span>
+                </div>
+
+                <div class="day-time">
+                  <span class="day">Tue</span>
+                  <span class="time">10:00—19:00</span>
+                </div>
+
+                <div class="day-time">
+                  <span class="day">Wed</span>
+                  <span class="time">10:00—19:00</span>
+                </div>
+
+                <div class="day-time">
+                  <span class="day">Thu</span>
+                  <span class="time">10:00—19:00</span>
+                </div>
+
+                <div class="day-time">
+                  <span class="day">Fri</span>
+                  <span class="time">10:00—17:00</span>
+                </div>
+
+                <div class="day-time">
+                  <span class="day">Sat</span>
+                  <span class="time">11:00—17:00</span>
+                </div>
+
+                <div class="day-time">
+                  <span class="day">Sun</span>
+                  <span class="time">Closed</span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="address">
+              <p>32-38 Theobalds Rd, London WC1X 8PA</p>
+            </div>
+
+          </div>
+        </aside>
+
+        <h2>A New Space for the Community</h2>
+        <p>
+          The library’s reopening also signals a shift in its role within the local community. With its new facilities, it aims to attract a wide range of visitors, including tech enthusiasts, creatives, and entrepreneurs. The addition of a café offers a relaxing environment to enjoy locally sourced food and beverages, making it a spot where people can unwind or collaborate outside of the traditional library setting.
+        </p>
+        <p>
+          At the same time, there are concerns that the renovations may reflect the changing demographic of the Holborn area, as rising property prices and the arrival of upscale businesses in the district have shifted the neighbourhood’s character. Critics have pointed out that while the new features are impressive, they could inadvertently exclude the library’s traditional patrons who might not be as interested in the coworking spaces or digital media centre.
+        </p>
+        <h2>Looking Ahead</h2>
+        <p>
+          Despite these concerns, the library’s revitalisation is undoubtedly a success, and its blend of historic preservation and modern functionality has been well received by many. As London’s public libraries continue to evolve, Holborn Library offers a glimpse into the future of public spaces—places where tradition and innovation coexist.
+        </p>
+        <p>
+          As it reopens its doors, the library stands as a symbol of how public resources can be reshaped to meet the needs of a rapidly changing world while still honouring the past. Whether or not the balance between the old and the new proves sustainable remains to be seen, but for now, the revamped Holborn Library is drawing in a diverse group of visitors, creating a space that embraces both the community’s roots and its aspirations.
+        </p>
+
+      </article>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>about</h4>
+          <ul>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">cookies</a></li>
+            <li><a href="#">accessibility statement</a></li>
+            <li><a href="#">terms of use</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>events</h4>
+          <ul>
+            <li><a href="#">culture</a></li>
+            <li><a href="#">tech</a></li>
+            <li><a href="#">events</a></li>
+            <li><a href="#">spotlight</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>stories</h4>
+          <ul>
+            <li><a href="#">history</a></li>
+            <li><a href="#">community</a></li>
+            <li><a href="#">business</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-meta"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AI Chatbot -->
+  <script
+    src="https://cdn.jsdelivr.net/gh/edenai/yodabot@e4f753f/embed.js?project=6edfc973-7cf2-46ee-9a88-311df42467c7&provider=openai&model=gpt-4o-mini"></script>
+
+  <!-- Mobile Menu -->
+  <script src="../src/hamburger.js"></script>
+
+</body>
+
+</html>

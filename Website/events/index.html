@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+  <link rel="stylesheet" href="../src/styles.css">
+  <title>Holborn</title>
+
+  <!-- Import Outfit Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Import Icons -->
+  <script src="https://kit.fontawesome.com/e597f29157.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Lenis Smooth Scrolling -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+  <script>
+    // Initialize Lenis
+    const lenis = new Lenis();
+
+    // Use requestAnimationFrame to continuously update the scroll
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  </script>
+
+  <!-- Import Swiper Library for Image Carousel-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="brand">holborn</a>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="nav-content" id="navContent">
+        <ul class="nav-menu">
+          <li><a href="../homepage">Home</a></li>
+          <li><a href="../events" class="active">Events</a></li>
+          <li><a href="../places">Places</a></li>
+        </ul>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-meta"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></i></a>
+        </div> <!-- Social Icons End -->
+
+      </div> <!-- Nav Content End -->
+    </div> <!-- Container End -->
+  </nav> <!-- Nav End -->
+
+  <section class="small-hero">
+    <div class="reveal-text">
+      <h1>Embrace</h1>
+    </div>
+    <div class="reveal-text">
+      <span>the pulse of Holborn</span>
+    </div>
+  </section>
+
+  <section class="events-grid">
+    <div class="container">
+      <div class="grid-title">
+        <h1 class="lineUp">What's Happening</h1>
+      </div>
+
+      <div class="grid">
+        <div class="card stacked feature">
+          <a href="../events/designfestival.html"><img src="../public/assets/featured2.png" alt="" class="card__img"
+              loading="lazy"></a>
+          <div class="card__content">
+            <a href="../events/designfestival.html">
+              <h2 class="card__title">London Design Festival 2035</h2>
+              <p class="card__description">
+                This year's festival celebrates London's position as the global design capital, featuring an
+                extraordinary lineup of events, exhibitions, and installations across the city.
+              </p>
+            </a>
+          </div>
+
+        </div>
+        <div class="card stacked">
+          <a href="../events/smartcafes.html"><img src="../public/assets/smartcafes.jpg" alt="" class="card__img"
+              loading="lazy"></a>
+          <div class="card__content">
+            <a href="../events/smartcafes.html">
+              <h2 class="card__title">The Rise of Smart Cafés in Central London</h2>
+              <p class="card__description">
+                Central London welcomes a new wave of innovative and tech-integrated cafés.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="card stacked">
+          <a href="../events/fashion.html"><img src="../public/assets/fashion.png" alt="" class="card__img" loading="lazy"></a>
+          <div class="card__content">
+            <a href="../events/fashion.html">
+              <h2 class="card__title">Holborn’s Emerging Role in London’s Style Scene</h2>
+              <p class="card__description">
+                Explore how Holborn is shaping the future of London fashion.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="card stacked">
+          <a href="../events/techfair.html"><img src="../public/assets/techfair.jpg" alt="" class="card__img" loading="lazy"></a>
+          <div class="card__content">
+            <a href="../events/techfair.html">
+              <h2 class="card__title">Holborn Tech Fair</h2>
+              <p class="card__description">
+                Discover how the Holborn Tech Fair is shaping London’s role as a hub for innovation, connecting global experts and showcasing emerging technologies.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="card stacked">
+          <a href="../events/emmahughes.html"><img src="../public/assets/emmahughes.png" alt="" class="card__img" loading="lazy"></a>
+          <div class="card__content">
+            <a href="../events/emmahughes.html">
+              <h2 class="card__title">The Quiet Creative Behind Holborn’s Rise as a Design Hub</h2>
+              <p class="card__description">
+                Discover how Emma Hughes, a Holborn-based interior designer, is shaping the district’s creative scene and blending modern style with historical charm.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="card stacked">
+          <a href="../events/holbornlibrary.html"><img src="../public/assets/library.jpg" alt="" class="card__img" loading="lazy"></a>
+          <div class="card__content">
+            <a href="../events/holbornlibrary.html">
+              <h2 class="card__title">Holborn Library Reopens After £12 Million Renovation</h2>
+              <p class="card__description">
+                The newly renovated Holborn Library blends historic charm with modern amenities, offering coworking spaces, a digital media centre, and a café, while hosting a range of cultural events for the community.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="card stacked">
+          <a href="../events/weekendvintagemarket.html"><img src="../public/assets/vintagemarket.jpg" alt="" class="card__img" loading="lazy"></a>
+          <div class="card__content">
+            <a href="../events/weekendvintagemarket.html">
+              <h2 class="card__title">Weekend Vintage Market</h2>
+              <p class="card__description">
+                Discover rare treasures, live music, and global street food at East End's iconic Weekend Vintage Market.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="card stacked">
+          <a href="../events/databreach.html"><img src="../public/assets/databreach.png" alt="" class="card__img" loading="lazy"></a>
+          <div class="card__content">
+            <a href="../events/databreach.html">
+              <h2 class="card__title">Data Breach Shakes Holborn: Thousands of Personal Records Exposed</h2>
+              <p class="card__description">
+                Holborn’s tech hub faces scrutiny after a major data breach at Nimbus Solutions exposed personal details of over 150,000 people.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="card stacked">
+          <a href="../events/cleanup.html"><img src="../public/assets/cleanup.png" alt="" class="card__img" loading="lazy"></a>
+          <div class="card__content">
+            <a href="../events/cleanup.html">
+              <h2 class="card__title">The Volunteer-Led Initiative Cleaning Up Holborn’s Streets</h2>
+              <p class="card__description">
+                Holborn’s cleanup initiative transforms the community, removing 50+ tons of waste and inspiring a citywide push for sustainability.
+              </p>
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>about</h4>
+          <ul>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">cookies</a></li>
+            <li><a href="#">accessibility statement</a></li>
+            <li><a href="#">terms of use</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>events</h4>
+          <ul>
+            <li><a href="#">culture</a></li>
+            <li><a href="#">tech</a></li>
+            <li><a href="#">events</a></li>
+            <li><a href="#">spotlight</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>stories</h4>
+          <ul>
+            <li><a href="#">history</a></li>
+            <li><a href="#">community</a></li>
+            <li><a href="#">business</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-meta"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- AI Chatbot -->
+  <script
+    src="https://cdn.jsdelivr.net/gh/edenai/yodabot@e4f753f/embed.js?project=6edfc973-7cf2-46ee-9a88-311df42467c7&provider=openai&model=gpt-4o-mini"></script>
+
+  <!-- Mobile Menu -->
+  <script src="../src/hamburger.js"></script>
+
+</body>
+
+</html>
